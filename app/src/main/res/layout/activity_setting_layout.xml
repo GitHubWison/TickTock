@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_1"
+            android:id="@+id/npHour"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_1"
+            app:layout_constraintTop_toTopOf="@id/npHour"
+            app:layout_constraintBottom_toBottomOf="@id/npHour"
+            app:layout_constraintLeft_toRightOf="@id/npHour"
+            app:layout_constraintRight_toLeftOf="@id/npMin"
+            android:text="时"
+    />
+    <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/npMin"
+                  app:layout_constraintLeft_toRightOf="@id/tv_1"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintRight_toLeftOf="@id/tv_2"
+
+
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/tv_2"
+              android:text="分"
+              app:layout_constraintTop_toTopOf="@id/npMin"
+              app:layout_constraintBottom_toBottomOf="@id/npMin"
+              app:layout_constraintLeft_toRightOf="@id/npMin"
+              app:layout_constraintRight_toLeftOf="@id/npSec"
+    />
+    <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/npSec"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintLeft_toRightOf="@id/tv_2"
+                  app:layout_constraintRight_toLeftOf="@id/tv_3"
+
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/tv_3"
+              android:text="秒"
+              app:layout_constraintTop_toTopOf="@id/npSec"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintBottom_toBottomOf="@id/npSec"
+              app:layout_constraintLeft_toRightOf="@id/npSec"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="@id/etName"
+              app:layout_constraintBottom_toBottomOf="@id/etName"
+              app:layout_constraintRight_toLeftOf="@id/etName"
+              app:layout_constraintLeft_toLeftOf="parent"
+              android:text="名"
+              android:id="@+id/tv_4"
+    />
+    <EditText android:layout_width="0dp" android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/tv_4"
+              android:layout_marginTop="@dimen/dp_10"
+              app:layout_constraintRight_toRightOf="parent"
+              android:id="@+id/etName"
+              app:layout_constraintTop_toBottomOf="@id/npSec"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSure"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="确定"
+            app:layout_constraintVertical_bias="0.827"/>
+</android.support.constraint.ConstraintLayout>

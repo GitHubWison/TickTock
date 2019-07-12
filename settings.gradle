@@ -1,0 +1,3 @@
+include ':app',':toolslibrary',':uilibrary'
+project(':toolslibrary').projectDir = new File("/home/xuqiwei/documents/android/project/mymodule/Tools/toolslibrary")
+project(':uilibrary').projectDir = new File("/home/xuqiwei/documents/android/project/mymodule/UI/uilibrary")
